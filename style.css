@@ -118,6 +118,12 @@ h2{
 
 @media (max-width: 768px) {
     .slider-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        flex-wrap: wrap;
         width: 100%;
         overflow: hidden;
     }
@@ -127,12 +133,14 @@ h2{
         align-items: center;
         align-content: center;
         text-align: center;
-        width: 55px;/* Reducir el ancho de las imágenes en pantallas pequeñas */
+        flex-wrap: wrap;
+        width: 40px;/* Reducir el ancho de las imágenes en pantallas pequeñas */
     }
 
     .slider-img.active{
-        width: 240px !important;
+        width: 200px !important;
         height: 750px !important;
+        background-size: cover;
     }
     
     .slider-img.active .details p, .slider-img.active .details h2{
@@ -147,6 +155,10 @@ h2{
         transform: rotate(90deg);
         text-transform: uppercase;
     }*/
+    .title{
+        display: block;
+        font-size: 55px;
+    }
     h2{
         font-size: 20px;
     }
