@@ -142,11 +142,11 @@ h2{
     .slider-img.active h2{
         display: block;
     }
-    .title{
+    /*.title{
         font-size: 400px;
         transform: rotate(90deg);
         text-transform: uppercase;
-    }
+    }*/
     h2{
         font-size: 20px;
     }
