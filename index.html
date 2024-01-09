@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img ">
+                <img src="images/4.jpg" alt="model1">
+                <h1>Shara</h1>
+                <div class="details">
+                    <h2>Shara</h2>
+                    <p>Short</p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="images/7.jpg" alt="model2" class="model2">
+                <h1>Denisse</h1>
+                <div class="details">
+                    <h2>Denisse</h2>
+                    <p>Short</p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="images/3.jpg" alt="model1">
+                <h1>Margo</h1>
+                <div class="details">
+                    <h2>Margo</h2>
+                    <p>Short</p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="images/1.jpg" alt="model1">
+                <h1>Cande</h1>
+                <div class="details">
+                    <h2>Cande</h2>
+                    <p>Short</p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="images/5.jpg" alt="model1">
+                <h1>Doris</h1>
+                <div class="details">
+                    <h2>Doris</h2>
+                    <p>Short</p>
+                </div>
+            </div>
+            <div class="slider-img ">
+                <img src="images/6.jpg" alt="model1">
+                <h1>Zapiro</h1>
+                <div class="details">
+                    <h2>Zapiro</h2>
+                    <p>Short</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var sliderImgs = document.querySelectorAll('.slider-img');
+    
+        sliderImgs.forEach(function(img) {
+            img.addEventListener('click', function() {
+                // Si la imagen clicada ya está activa, desactívala
+                if (img.classList.contains('active')) {
+                    img.classList.remove('active');
+                } else {
+                    // Si no está activa, desactiva todas y activa la clicada
+                    sliderImgs.forEach(function(otherImg) {
+                        otherImg.classList.remove('active');
+                    });
+                    img.classList.add('active');
+                }
+            });
+        });
+    });
+    </script>
+    
+
+</body>
+</html>
